@@ -90,8 +90,7 @@ class EmployeeController extends Controller {
 	                        'created_by' => $sessi->fullname
 	                    );
 	    		$datausers = M\Users::create($inputusers);
-	    		/* this not include in github code because contain my account gmail which i am use smtp gmail to
-	    		send password to new employee
+	    		/*
 	    		$email = Inputs::get('email');
 				$from_email    = "calonmilyarder03@gmail.com";
 				$datas = array(
@@ -103,6 +102,7 @@ class EmployeeController extends Controller {
 		            $send->to($email)->subject('Registration Task Management System');
 		        });
 		        */
+		        
 	        	DB::commit();
 	            $response['success'] = true;
 	            $response['message'] = "Success save data";

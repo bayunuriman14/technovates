@@ -127,7 +127,7 @@
 @stop
 @section('script')
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMm8Okovi4yn1HE6SedvapFaEVznRzjGU&callback=initialize" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=myApiKey&callback=initialize" async defer></script>
 
 <style type="text/css">
     #map_canvas{
